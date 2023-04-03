@@ -20,7 +20,7 @@ public class SymmetricMatrix {
 		System.out.println("The given Matrix");
 		for(int i=0; i<rows; i++){
 			for(int j=0; j<cols; j++)
-				System.out.println(matrix[i][j]+"\t");
+				System.out.print(matrix[i][j]+"\t");
 			System.out.println();}
 		if(rows!=cols)
 			System.out.println("The given Matrix is not a square matrix");
