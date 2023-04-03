@@ -10,7 +10,7 @@ public class StringSort {
     	   count=scan.nextInt();
     	   String strlist[]=new String[count];
     	   Scanner scan1=new Scanner(System.in);
-    	   System.out.println("enter your strings");
+    	   System.out.println("enter number of strings");
     	   for(int i=0;i<count;i++)
                  strlist[i]=scan1.nextLine();
            System.out.println("choose 1 or 2 from the menu below:");
