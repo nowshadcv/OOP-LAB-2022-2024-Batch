@@ -1,4 +1,4 @@
-package athulyamc;
+package aiswarya;
 
 
 import java.util.Scanner;
