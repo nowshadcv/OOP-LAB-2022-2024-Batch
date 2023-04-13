@@ -29,7 +29,7 @@ class Teacher extends EmployeeT{
 		System.out.println("Teacher subject:" +subject);
 	}
 
-public class TeacherArrObkjects {
+public class TeacherArrObjects {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
