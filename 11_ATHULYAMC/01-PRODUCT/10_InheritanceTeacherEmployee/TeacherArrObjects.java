@@ -1,4 +1,4 @@
-package athulyamc;
+package Method;
 
 import java.util.Scanner;
 class EmployeeT{
