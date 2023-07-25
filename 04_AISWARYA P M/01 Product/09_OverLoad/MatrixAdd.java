@@ -1,54 +1,30 @@
-package aiswarya;
 
+package Aishu;
 import java.util.Scanner;
-
-public class MatrixAdd {
+class OverLoadDemo{
+	void area(float x) {
+		System.out.println("The area of the square is "+Math.pow(x, 2)+" sq units");
+	}
+	void area(float x,float y)
+		System.out.println("The area of the rectangle is "+x*y+" sq units");
+	}
+	void area(double x) {
+		double z=3.14*x*x;
+		System.out.println("The area of the circle is "+z+" sq units");
+	}
+}
+class OverLoad {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-        int p,q,m,n;
-        Scanner s=new Scanner(System.in);
-        System.out.print("Enter number of rows in matrix A:");
-        p=s.nextInt();
-        System.out.print("Enter number of colums in matrix A:");
-        q=s.nextInt();
-        System.out.print("Enter number of rows in matrix B:");
-        m=s.nextInt();
-        System.out.print("Enter number of column in matrix B:");
-        n=s.nextInt();
-        if(p==m && q==n) {
-        	int a[][]=new int[p][q];
-        	int b[][]=new int[m][n];
-        System.out.println("Enter the elements of Matrix A:");
-        for(int i=0;i<p;i++)
-        	for(int j=0;j<q;j++)
-        		a[i][j]=s.nextInt();
-        System.out.println("Enter the elements of Matrix B:");
-        for(int i=0;i<m;i++)
-        	for(int j=0;j<n;j++)
-        		b[i][j]=s.nextInt();
-        System.out.println("Matrix A:");
-        for(int i=0;i<p;i++) {
-        	for(int j=0;j<q;j++)
-        		System.out.print(a[i][j]+" ");
-        	System.out.println();
-        }
-        System.out.println("Matrix B:");
-        for(int i=0;i<m;i++) {
-        	for(int j=0;j<n;j++)
-        		System.out.print(b[i][j]+" ");
-        	System.out.println();
-        }
-        System.out.println("Sum Matrix:");
-        for(int i=0;i<m;i++) {
-        	for(int j=0;j<n;j++) 
-        		System.out.print(a[i][j]+b[i][j]+" ");
-        	System.out.println();	
-        	}
-        }
-        else {
-        	System.out.println("These matrix cannot be added..");
-        }
+		OverLoadDemo ob=new OverLoadDemo();
+		//ob.area(5);
+		ob.area(11,12);
+		ob.area(2.5);
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the side of square:");
+		int side=s.nextInt();
+		ob.area(side);
+
 	}
 
 }
